@@ -1,0 +1,5 @@
+python-xvfbwrapper (0.2.4-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #XXXXXX)
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 17 Jun 2014 16:18:45 +0800
