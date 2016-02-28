@@ -14,8 +14,8 @@ Build-Depends: debhelper (>= 9),
                python3-nose,
                python3-setuptools
 Standards-Version: 3.9.5
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-xvfbwrapper.git
-Vcs-Git: git://anonscm.debian.org/openstack/python-xvfbwrapper.git
+Vcs-Browser: https://anonscm.debian.org/cgit/openstack/python-xvfbwrapper.git/
+Vcs-Git: https://anonscm.debian.org/git/openstack/python-xvfbwrapper.git
 Homepage: https://github.com/cgoldberg/xvfbwrapper
 
 Package: python-xvfbwrapper
