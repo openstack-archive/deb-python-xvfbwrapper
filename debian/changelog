@@ -1,11 +1,15 @@
-python-xvfbwrapper (0.2.4-2) UNRELEASED; urgency=medium
+python-xvfbwrapper (0.2.4-2) unstable; urgency=medium
 
+  [ Ondřej Nový ]
   * Fixed VCS URLs (https).
   * d/rules: Changed UPSTREAM_GIT protocol to https
   * d/s/options: extend-diff-ignore of .gitreview
   * d/control: Using OpenStack's Gerrit as VCS URLs.
 
- -- Ondřej Nový <novy@ondrej.org>  Sun, 28 Feb 2016 15:55:37 +0100
+  [ Thomas Goirand ]
+  * Add patch to close /dev/null after use (Closes: #842944).
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 03 Nov 2016 13:14:26 +0100
 
 python-xvfbwrapper (0.2.4-1) unstable; urgency=medium
 

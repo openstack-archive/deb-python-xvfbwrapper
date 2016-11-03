@@ -1,0 +1,26 @@
+Description: close /dev/null after using it
+ When using xvfbwrapper with unittest discover (python3) an error message
+ occurs. Reason is a missing 'close' on a ressource.
+Author: Etienne Fabian <e.fabian@intenta.de>
+Bug-Debian: https://bugs.debian.org/842944
+Forwarded: not-needed
+Last-Update: 2016-11-03
+
+--- python-xvfbwrapper-0.2.4.orig/xvfbwrapper.py
++++ python-xvfbwrapper-0.2.4/xvfbwrapper.py
+@@ -48,10 +48,11 @@ class Xvfb:
+         self.vdisplay_num = self.search_for_free_display()
+         self.xvfb_cmd = ['Xvfb', ':%d' % self.vdisplay_num] + self.xvfb_cmd
+ 
+-        self.proc = subprocess.Popen(self.xvfb_cmd,
+-                                     stdout=open(os.devnull),
+-                                     stderr=open(os.devnull),
+-                                     )
++        with open(os.devnull) as devnull:
++            self.proc = subprocess.Popen(self.xvfb_cmd,
++                                         stdout=devnull,
++                                         stderr=devnull,
++                                         )
+         time.sleep(0.2)  # give Xvfb time to start
+         ret_code = self.proc.poll()
+         if ret_code is None:
