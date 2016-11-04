@@ -2,12 +2,12 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: xvfbwrapper
 Source: https://github.com/cgoldberg/xvfbwrapper
 
-Files: debian/*
-Copyright: (c) 2014, Thomas Goirand <zigo@debian.org>
-License: Expat
-
 Files: *
 Copyright: (c) 2012-2013, Corey Goldberg <cgoldberg@gmail.com>
+License: Expat
+
+Files: debian/*
+Copyright: (c) 2014-2016, Thomas Goirand <zigo@debian.org>
 License: Expat
 
 License: Expat

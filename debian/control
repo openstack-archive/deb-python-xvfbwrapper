@@ -13,7 +13,7 @@ Build-Depends: debhelper (>= 9),
                python3-all,
                python3-nose,
                python3-setuptools
-Standards-Version: 3.9.5
+Standards-Version: 3.9.8
 Vcs-Browser: https://git.openstack.org/cgit/openstack/deb-python-xvfbwrapper?h=debian%2Fnewton
 Vcs-Git: https://git.openstack.org/openstack/deb-python-xvfbwrapper -b debian/newton
 Homepage: https://github.com/cgoldberg/xvfbwrapper
