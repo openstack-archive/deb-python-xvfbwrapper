@@ -1,12 +1,7 @@
-python-xvfbwrapper (0.2.4-3) UNRELEASED; urgency=medium
-
-  * Bumped debhelper compat version to 10
-
- -- Ondřej Nový <onovy@debian.org>  Thu, 24 Nov 2016 00:13:57 +0100
-
 python-xvfbwrapper (0.2.4-2) unstable; urgency=medium
 
   [ Ondřej Nový ]
+  * Bumped debhelper compat version to 10
   * Fixed VCS URLs (https).
   * d/rules: Changed UPSTREAM_GIT protocol to https
   * d/s/options: extend-diff-ignore of .gitreview
@@ -17,7 +12,7 @@ python-xvfbwrapper (0.2.4-2) unstable; urgency=medium
   * Standards-Version is now 3.9.8.
   * Fixed debian/copyright ordering.
 
- -- Thomas Goirand <zigo@debian.org>  Sat, 05 Nov 2016 00:23:14 +0100
+ -- Thomas Goirand <zigo@debian.org>  Sun, 18 Dec 2016 12:01:41 +0100
 
 python-xvfbwrapper (0.2.4-1) unstable; urgency=medium
 
